@@ -1,0 +1,157 @@
+\documentclass[10pt]{article}
+\usepackage{ctex}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{pifont}
+
+\geometry{top=0.1cm,bottom=0.1cm,left=0.0cm,right=0.1cm}
+% 设置页眉页脚样式
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\checkbox}{$\square$}
+
+
+
+\begin{document}
+	\begin{center}
+		\Large\textbf{附件2 - 1  投资者基本信息表（机构）}
+	\end{center}
+	    % 修改表格定义
+		\begin{xltabular}{\textwidth}{|>{\hsize=1.2\hsize}X|>{\hsize=1.2\hsize}X|*{8}{>{\hsize=1\hsize}X|}*{2}{>{\hsize=1.2\hsize}X|}*{2}{>{\hsize=0.8\hsize}X|}*{2}{>{\hsize=1.2\hsize}X|}*{2}{>{\hsize=0.8\hsize}X|}}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{机构全称}} &   
+		\multicolumn{6}{c|}{{param1}} & 
+		\multicolumn{2}{c|}{\textbf{注册资本}} & 
+		\multicolumn{3}{c|}{{param2}} & 
+		\multicolumn{2}{c|}{\textbf{币种}} & 
+		\multicolumn{3}{c|}{{param3}} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{机构性质、资质}} & 
+		\multicolumn{16}{c|}{{param4}} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{机构证件类型}} & 
+		\multicolumn{16}{l|}{\checkbox 营业执照（含三证合一） \checkbox 其他} \\ \hline
+		
+		\multicolumn{3}{|c|}{\textbf{营业执照号或社会信用代码}} & 
+		\multicolumn{5}{c|}{{param5}} & 
+		\multicolumn{2}{c|}{\textbf{执照有效期限}} & 
+		\multicolumn{8}{c|}{\qquad 年\quad 月\quad 日— \qquad 年\quad 月\quad 日} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{经营范围}} & 
+		\multicolumn{4}{c|}{\checkbox 同营业执照 \checkbox 其他} & 
+		\multicolumn{8}{c|}{\textbf{所属行业是否与期货交易品种有关}} & 
+		\multicolumn{4}{c|}{\checkbox 有 \checkbox 无} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{联系电话}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{传真号码}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{电子邮箱}} & 
+		\multicolumn{4}{c|}{} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{注册地址}} & 
+		\multicolumn{16}{l|}{\qquad \qquad 省\qquad\qquad  市\qquad\qquad 区} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{办公地址}} & 
+		\multicolumn{16}{l|}{\qquad\qquad 省\qquad\qquad 市\qquad\qquad 区 \qquad\qquad \checkbox 同注册地址} \\ \hline
+		
+		% 第二行
+		\multicolumn{2}{|c|}{\multirow{3}{*}{\textbf{\makecell{法定代表人\\（负责人）}}}} & 
+		\multicolumn{2}{c|}{\textbf{姓名}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{性别}} & 
+		\multicolumn{3}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{国籍}} & 
+		\multicolumn{3}{c|}{} \\ \cline{3-18}
+		% 第三行
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{2}{c|}{\textbf{证件类型}} & 
+		\multicolumn{4}{c|}{\checkbox 居民身份证 \checkbox 其他（ ）} & 
+		\multicolumn{2}{c|}{\textbf{有效期限}} & 
+		\multicolumn{8}{c|}{\quad 年 \quad 月 \quad 日— \qquad 年\quad  月 \quad 日} \\ \cline{3-18}
+		% 第四行
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{2}{c|}{\textbf{证件号码}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{联系电话}} & 
+		\multicolumn{8}{c|}{} \\ \hline
+		
+		\multicolumn{2}{|c|}{\multirow{3}{*}{\textbf{\makecell{控股股东/\\实际控制人\\\checkbox 同法定代表人}}}} & 
+		\multicolumn{2}{c|}{\textbf{名称/姓名}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{证件类型}} & 
+		\multicolumn{8}{c|}{\checkbox 营业执照 \checkbox 身份证 \checkbox 其他（ ）} \\ \cline{3-18}
+		% 第三行
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{2}{c|}{\textbf{证件号码}} & 
+		\multicolumn{4}{c|}{} & 
+		\multicolumn{2}{c|}{\textbf{有效期限}} & 
+		\multicolumn{8}{c|}{\quad 年 \quad 月 \quad 日— \qquad 年 \quad 月 \quad 日} \\ \cline{3-18}
+		% 第四行
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{2}{c|}{\textbf{联系地址}} & 
+		\multicolumn{14}{c|}{} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{资金来源}} & 
+		\multicolumn{2}{l|}{\checkbox 自有 \checkbox 其他} & 
+		\multicolumn{4}{l|}{\textbf{是否存在实际控制关系（期货经纪业务）}} & 
+		\multicolumn{10}{l|}{\checkbox 是 \checkbox 否（具体以实控关系表单填写为准）} \\ \hline
+		
+		\multicolumn{2}{|c|}{\multirow{2}{*}{\textbf{投资者类型}}} & 
+		\multicolumn{16}{c|}{金融机构：\checkbox 证券自营 \checkbox 保险公司 \checkbox 信托 \checkbox 私募基金管理机构 \checkbox 期货风险子公司 \checkbox 做市机构 \checkbox 其他（\underline{见编码表}）} \\ \cline{3-18}
+		% 第二行
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{16}{c|}{一般法人：\checkbox 财务公司 \checkbox 投资、咨询公司 \checkbox 房地产 \checkbox 工业 \checkbox 农业 \checkbox 商业贸易 \checkbox 多元化集团公司 \checkbox 其他} \\ \hline
+		
+		\multicolumn{2}{|c|}{\multirow{2}{*}{\textbf{诚信记录}}} & 
+		\multicolumn{16}{c|}{\checkbox 无不良诚信记录} \\ \cline{3-18}
+		% 后续内容
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{16}{l|}{\textbf{有来源于以下机构的不良诚信记录}} \\
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{16}{l|}{\checkbox 中国人民银行征信中心 \checkbox 最高人民法院失信被执行人名单 \checkbox 工商行政管理机构 \checkbox 税务管理机构} \\
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{16}{l|}{\checkbox 监管机构、自律组织 \checkbox 从事投资活动时产生的违约失信 \checkbox 过度维权等不当行为信息 \checkbox 其他组织} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{交易及服务类型}} & 
+		\multicolumn{16}{c|}{\checkbox 期货、标准化期权 \checkbox 资管产品 \checkbox 基金 \checkbox 交易咨询 \checkbox 场外衍生品 \checkbox 其他} \\ \hline 
+		\multicolumn{2}{|c|}{\textbf{期货交易类型}} & 
+		\multicolumn{16}{c|}{\checkbox 投机 \checkbox 套利 \checkbox 套保} \\ \hline
+		
+		\multicolumn{2}{|c|}{\textbf{投资期限}} & 
+		\multicolumn{6}{c|}{\checkbox 0年-1年 \checkbox 1年-5年 \checkbox 5年以上} & 
+		\multicolumn{5}{c|}{\textbf{期望收益}} & 
+		\multicolumn{5}{c|}{\checkbox 稳健 \checkbox 成长 \checkbox 激进} \\ \hline
+		
+		\multicolumn{2}{|c|}{\multirow{2}{*}{\textbf{涉税信息尽调}}} & 
+		\multicolumn{16}{c|}{\checkbox 1.金融机构 \checkbox 2.消极非金融机构 \checkbox 3.其他非金融机构} \\ \cline{3-18}
+		
+		\multicolumn{2}{|c|}{} & 
+		\multicolumn{16}{c|}{\checkbox 1.仅为中国税收居民 \checkbox 2.仅为非居民 \checkbox 3.既是中国税收居民又是其他国家（地区）税收居民} \\ \hline
+		
+		
+		\multicolumn{18}{|c|}{
+			\begin{minipage}{\dimexpr\linewidth-2\tabcolsep-2\arrayrulewidth}
+				\textbf{声明：}\\
+				1．本机构承诺以上填写内容和授权事项均属实，如因以上提供的信息不真实、不准确、不完整的而产生的风险和后果，全部由本机构承担；如上述内容发生变更将及时通知贵公司，如因未能及时完成告知由此产生的后果将由本机构承担。\\
+				2．本机构有能力承担因参与期货交易而产生的风险，并保证参与交易资金来源的合法性和所提供资料的真实性。承诺遵守期货交易场所和期货结算机构的各项业务规则，自愿承担期货交易结果。\\
+	
+				\indent 法定代表人（负责人）/或经办人（签章）：\\
+				\indent 申请单位盖章：\\
+				\indent 申请日期： \qquad年\quad 月\quad 日
+		\end{minipage}} \\ \hline
+	\end{xltabular}
+	\textbf{备注：1、若您在机构类型-税收一栏选择"消极非金融机构"、"仅为非居民"、"既是中国税收居民又是其他国家（地区）税收居民"中任何一类的，应另表填写相关信息；}
+\end{document}
